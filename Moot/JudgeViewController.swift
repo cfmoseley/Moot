@@ -81,7 +81,7 @@ class JudgeViewController: UIViewController, UIPickerViewDelegate, UIPickerViewD
             pkrProvince.selectRow(0, inComponent: 0, animated: true)
             swFrenchSpeaking.isOn = false
         }
-        txtFirstName.isFirstResponder
+        txtFirstName.becomeFirstResponder()
     }
     
     
