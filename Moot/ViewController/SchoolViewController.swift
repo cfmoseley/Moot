@@ -100,7 +100,7 @@ class SchoolViewController: UIViewController, UIPickerViewDelegate, UIPickerView
             pkrProvince.selectRow(0, inComponent: 0, animated: true)
             vwMooters.isHidden = true
         }
-        txtName.isFirstResponder
+        txtName.becomeFirstResponder()
     }
     
     // MARK: Picker view datasource

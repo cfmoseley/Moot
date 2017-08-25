@@ -37,7 +37,7 @@ class MooterViewController: UIViewController, UIPickerViewDelegate, UIPickerView
             //Add the school to the moc
             if let _ = mooter {
                 if let _ = mooter!.school {
-                    print("Editing mooter school: \(mooter!.school!.name)")
+                    print("Editing mooter school: \(String(describing: mooter!.school!.name))")
                 } else {
                     print("Editing mooter school: nil")
                }
@@ -105,7 +105,7 @@ class MooterViewController: UIViewController, UIPickerViewDelegate, UIPickerView
             swInterpretation.isOn = false
             pkrSchool.selectRow(3, inComponent: 0, animated: true)
         }
-        txtFirstName.isFirstResponder
+        txtFirstName.becomeFirstResponder()
     }
     
 // MARK: Picker view datasource
@@ -174,6 +174,6 @@ class MooterViewController: UIViewController, UIPickerViewDelegate, UIPickerView
     }
     
     func pickerView(_ pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
-        print("Selected: \(fetchedSchools[row].name)")
+        print("Selected: \(String(describing: fetchedSchools[row].name))")
     }
 }

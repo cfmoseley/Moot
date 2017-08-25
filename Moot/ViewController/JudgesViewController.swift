@@ -136,7 +136,7 @@ class JudgesViewController: UIViewController, UITableViewDataSource, UITableView
     
     func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
         
-        if let ip: IndexPath = IndexPath(row: 0, section: section) {
+        if let ip: IndexPath = IndexPath(row: 0, section: section) as IndexPath? {
             let judge = fetchedResultsController!.object(at: ip) as! Judge
             
             let v: UILabel = UILabel()

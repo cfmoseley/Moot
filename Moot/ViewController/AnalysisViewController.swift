@@ -325,6 +325,7 @@ class AnalysisViewController: UIViewController, UIPickerViewDelegate, UIPickerVi
                     break
                 }
             }
+            
             m.firstName = fm.firstName!
             m.lastName = fm.lastName!
             m.language = fm.language!
