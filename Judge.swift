@@ -9,7 +9,7 @@
 import Foundation
 import CoreData
 
-@objc(Judge)
+//@objc(Judge)
 class Judge: NSManagedObject {
 
 // Insert code here to add functionality to your managed object subclass
